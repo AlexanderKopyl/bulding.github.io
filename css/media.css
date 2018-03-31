@@ -1,0 +1,63 @@
+@media all and (min-width: 320px) and (max-width: 1200px) {
+  /* line 3, ../sass/media.sass */
+  main #block-for-slider {
+    max-width: 320px;
+    margin-bottom: 70px; }
+    /* line 6, ../sass/media.sass */
+    main #block-for-slider #viewport {
+      max-width: 320px;
+      margin: auto;
+      position: relative;
+      height: 567px; }
+      /* line 11, ../sass/media.sass */
+      main #block-for-slider #viewport #slidewrapper {
+        width: calc(100% * 8 + 320px); }
+      /* line 13, ../sass/media.sass */
+      main #block-for-slider #viewport li {
+        width: calc(100% / 8 - 40px);
+        line-height: inherit;
+        margin-right: 0px; }
+        /* line 17, ../sass/media.sass */
+        main #block-for-slider #viewport li img {
+          width: 80%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; } }
+@media all and (min-width: 320px) and (max-width: 800px) {
+  /* line 23, ../sass/media.sass */
+  header .blockWhatWEdo {
+    text-align: center; }
+  /* line 25, ../sass/media.sass */
+  header .workingOutList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+    /* line 28, ../sass/media.sass */
+    header .workingOutList li:nth-child(-n+2) {
+      margin-right: 0; }
+      /* line 30, ../sass/media.sass */
+      header .workingOutList li:nth-child(-n+2):after {
+        background-color: transparent; }
+  /* line 32, ../sass/media.sass */
+  header .headerButton {
+    margin-left: auto;
+    margin-right: auto; }
+
+  /* line 36, ../sass/media.sass */
+  main .OurServices {
+    text-align: center; }
+  /* line 38, ../sass/media.sass */
+  main .blockOffers {
+    margin-bottom: 10px; } }
+@media all and (min-width: 320px) and (max-width: 500px) {
+  /* line 44, ../sass/media.sass */
+  footer .contact span {
+    font-size: 17px; }
+  /* line 46, ../sass/media.sass */
+  footer .contact .footerButton {
+    width: 100%;
+    height: 8%; } }
+
+/*# sourceMappingURL=media.css.map */

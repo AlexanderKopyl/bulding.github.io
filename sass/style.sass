@@ -1,0 +1,324 @@
+@import "mixins"
+@include font-face(slick, fonts/slick)
+@include font-face("Roboto Bold", fonts/roboto-bold, $weight: null, $style: null, $exts: ttf)
+@include font-face("Roboto edium", fonts/roboto-medium, $weight: null, $style: null, $exts: ttf)
+@include font-face("Roboto Regular", fonts/roboto-regular, $weight: null, $style: null, $exts: ttf)
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  cursor: pointer
+  color: black
+  font-family: "Roboto Medium", Arial
+  &:hover
+    color: #000
+    text-decoration: none
+
+ul
+  list-style: none
+body
+  overflow-x: hidden
+header
+  background-image: url("../img/headerBack.png")
+  background-repeat: no-repeat
+  background-size: cover
+  color: white
+  h1
+    font-size: 45px
+    font-family: "Roboto Medium", Arial
+  .navbar
+    float: right
+    margin-bottom: 175px
+    margin-top: 10px
+    .navbar-nav
+      .nav-item
+        font-family: "Roboto Medium", Arial
+        font-size: 21px
+        color: white
+        a
+          color: white
+  .workingOutList
+    font-family: "Roboto Medium", Arial
+    font-size: 29px
+    display: flex
+    li:nth-child(-n+2)
+      margin-right: 25px
+      position: relative
+      &:after
+        content: ''
+        background-color: white
+        height: 25px
+        width: 3px
+        display: inline-block
+        margin-left: 10px
+        position: absolute
+        bottom: 8px
+  p
+    font-size: 20px
+    font-family: "Roboto Medium", Arial
+    margin-top: 80px
+  .headerButton
+    width: 250px
+    background-color: white
+    display: flex
+    text-align: center
+    height: 50px
+    align-items: center
+    justify-content: center
+    border: 2px solid #4376BB
+    margin-bottom: 130px
+    margin-top: 55px
+
+main
+  .heading
+    text-align: center
+    margin-top: 85px
+    margin-bottom: 40px
+    line-height: 1.7
+    h2
+      font-family: "Roboto Medium", Arial
+      font-size: 29px
+      font-weight: bold
+      margin-bottom: 30px
+    p
+      font-size: 21px
+      font-family: "Roboto Medium", Arial
+  .blockOffers
+    height: 320px
+    background-color: #E6E5E5
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+    line-height: 2
+    padding: 10px
+    .buttonOffers
+      display: flex
+      align-items: center
+      justify-content: center
+      font-family: "Roboto Medium", Arial
+      font-size: 17px
+      height: 40px
+      width: 167px
+      background-color: white
+      border: 4px solid #4376BB
+    h3
+      color: #436DB5
+      font-size: 25px
+      font-family: "Roboto Medium", Arial
+
+    p
+      font-size: 17px
+      font-family: "Roboto Regular", Arial
+  .buttonUnderOffers
+    display: flex
+    align-items: center
+    justify-content: center
+    font-family: "Roboto Medium", Arial
+    font-size: 21px
+    border-bottom: 3px solid #4376BB
+    width: 295px
+    height: 43px
+    margin: 60px auto 35px auto
+    svg
+      font-size: 14px
+      margin-left: 10px
+  .blockAboutUs
+    background-color: #E6E5E5
+    display: flex
+    justify-content: center
+    align-items: center
+    h3
+      margin-top: 45px
+      font-size: 30px
+      font-weight: bold
+      margin-bottom: 55px
+    p
+      font-size: 21px
+      font-family: "Roboto Regular", Arial
+      color: #5D5D5D
+    .buttonUnderOffers
+      margin-bottom: 80px
+      width: 206px
+      margin-left: 0
+      svg
+        margin-left: 5px
+  #block-for-slider
+    width: 800px
+    margin: 0 auto
+    margin-top: 56px
+    #viewport
+      width: 100%
+      display: flex
+      flex-direction: column
+      //position: relative
+      overflow: hidden
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      -o-user-select: none
+      user-select: none
+    #slidewrapper
+      position: relative
+      width: calc(100% * 8)
+      top: 0
+      left: 0
+      margin: 0
+      padding: 0
+      -webkit-transition: 1s
+      -o-transition: 1s
+      transition: 1s
+      -webkit-transition-timing-function: ease-in-out
+      -o-transition-timing-function: ease-in-out
+      transition-timing-function: ease-in-out
+    #slidewrapper ul,
+    #slidewrapper li
+      margin: 0
+      padding: 0
+    #slidewrapper li
+      width: calc(100% / 8 - 420px)
+      list-style: none
+      display: inline
+      float: left
+      background-color: white
+      margin-right: 20px
+      border: 16px solid #D9D8D9
+      height: 500px
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      padding: 0px 10px 0 10px
+      line-height: 2
+      span
+        font-size: 25px
+        font-family: "Roboto Medium", Arial
+        font-weight: bold
+      p
+        font-size: 17px
+        font-family: "Roboto Regular", Arial
+    .slide-img
+      display: block
+      margin: 30px auto 30px auto
+    #prev-btn, #next-btn
+      position: absolute
+      width: 50px
+      height: 50px
+      bottom: 0
+
+    #prev-btn
+      left: 25%
+      cursor: pointer
+      img
+        width: 95%
+    #next-btn
+      right: 25%
+      cursor: pointer
+      img
+        width: 95%
+  .buttonProject
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 36px
+    width: 170px
+    border: 4px solid #4376BB
+    background-color: white
+  .advantage
+    .buttonUnderOffers
+      margin-bottom: 20px
+      width: 206px
+      svg
+        margin-left: 5px
+
+    h3
+      font-family: "Roboto Medium", Arial
+      font-size: 29px
+      font-weight: bold
+      margin-bottom: 30px
+      margin-top: 85px
+    p
+      font-size: 21px
+      font-family: "Roboto Medium", Arial
+      margin-bottom: 80px
+    div
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      align-content: start
+      text-align: center
+      span
+        font-family: "Roboto Bold", Arial
+        font-size: 21px
+        margin-bottom: 55px
+        margin-top: 30px
+      p
+        font-family: "Roboto Regular", Arial
+        font-size: 17px
+footer
+  background-color: #4376BB
+
+  .myTool
+    position: relative
+  .contact
+    position: absolute
+    top: 0
+    height: 99.2%
+    width: 60%
+    background-color: rgba(248,250,245,0.8)
+    left: 31.3px
+    .heightForBlock
+      height: 100%
+    .footerButton
+      width: 250px
+      background-color: white
+      display: flex
+      text-align: center
+      height: 50px
+      align-items: center
+      justify-content: center
+      border: 2px solid #4376BB
+      margin-bottom: 130px
+    h3
+      font-family: "Roboto Bold",Arial
+      font-size: 25px
+      color: black
+      margin-bottom: 40px
+      text-align: left
+    span
+      display: block
+      font-family: "Roboto Bold"
+      font-size: 21px
+    .text
+      font-family: "Roboto Regular",Arial
+      margin-bottom: 35px
+  .contentFooter
+    margin-bottom: 16px
+  iframe
+    width: 100%
+  img
+    width: 100%
+    height: 100%
+  h3
+    margin-top: 35px
+    margin-bottom: 60px
+    font-family: "Roboto Bold",Arial
+    font-size: 30px
+    color: white
+    text-align: center
+  p
+    font-family: "Roboto Bold",Arial
+    font-size: 18px
+    color: white
+
+
+
+
+
+
+
+
