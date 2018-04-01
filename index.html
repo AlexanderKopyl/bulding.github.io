@@ -14,33 +14,66 @@
     <title>Document</title>
 </head>
 <body>
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Отправить заявку</h4>
+            </div>
+            <div class="modal-body">
+                <form action="modal.php" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Почта</label>
+                            <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Name">Имя</label>
+                            <input type="text" name="name" class="form-control" id="Name" placeholder="Александр">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Адресс</label>
+                        <input type="text" name="adress" class="form-control" id="inputAddress" placeholder="ул.Плеханова 13а">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputTel">Телефон</label>
+                        <input type="text" name="tel" class="form-control" id="inputTel" placeholder="+380630684458">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Заказать</button>
+                </form>
+            </div>
+            <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+        </div>
+    </div>
+</div>
 <header>
-    <div class="container blockWhatWEdo">
+    <div id="main"class="container blockWhatWEdo">
         <div class="row">
             <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbar1" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
-                    <div class="collapse navbar-collapse" id="navbar1">
+
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link anchor" href="#main">Главная </a>
+                                <a class="nav-link anchor" href="#main">Главная</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link anchor">Услуги</a>
+                                <a class="nav-link anchor" href="#Offers">Услуги</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link anchor">Проекты</a>
+                                <a class="nav-link anchor" href="#projects">Проекты</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link anchor">О нас</a>
+                                <a class="nav-link anchor" href="#about">О нас</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link anchor">Контакты</a>
+                                <a class="nav-link anchor" href="#contats">Контакты</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link anchor">+7 123 456 78 90</a>
@@ -67,13 +100,13 @@
                 <p>Наша цель – предоставить клиенту лучшее качество,<br>
                     конкурентоспособную цену и максимальный уровень сервиса
                 </p>
-                <a class="headerButton" href="#">Узнать больше</a>
+                <a class="headerButton anchor" href="#Offers">Узнать больше</a>
             </div>
         </div>
     </div>
 </header>
 <main>
-    <div class="container OurServices">
+    <div class="container OurServices" id="Offers">
         <div class="row">
             <div class="col-md-12 heading">
                 <h2>Наши услуги</h2>
@@ -82,131 +115,134 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12 col-lg-4">
                 <div class="blockOffers">
-                    <h3>Проектирование и прототипирование</h3>
+                    <h3 >Проектирование и прототипирование</h3>
                     <p>Мы предоставляем комплексные услуги разработки электроники под ключ от прототипирования до
                         серийного производства</p>
-                    <a class="buttonOffers" href="#">Узнать больше</a>
+                    <a class="buttonOffers anchor" href="#projects">Узнать больше</a>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12 col-lg-4">
                 <div class="blockOffers">
                     <h3>Разработка и доработка
                         готовых проектов</h3>
-                    <p>У нас есть необходимое оборудование для разработки
+                    <p class="Pclass">У нас есть необходимое оборудование для разработки
                         и доработки готовых электронных устройств.</p>
-                    <a class="buttonOffers" href="#">Узнать больше</a>
+                    <a class="buttonOffers anchor" href="#projects">Узнать больше</a>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12 col-lg-4">
                 <div class="blockOffers">
                     <h3>Производство электроники
                         любой сложности</h3>
-                    <p>
+                    <p class="Pclass">
                         Изготовим прототип от 1 штук до нескольких тысяч единиц в месяц.
                         Мы готовы к любому объему производства
                     </p>
-                    <a class="buttonOffers" href="#">Узнать больше</a>
+                    <a class="buttonOffers anchor"  href="#projects">Узнать больше</a>
                 </div>
 
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <a class="buttonUnderOffers" href="#">Наши последние проекты<i class="fas fa-arrow-right"></i></a>
+                <a class="buttonUnderOffers anchor" href="#projects">Наши последние проекты<i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
-    <div class="container-fluid blockAboutUs">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Реализованые нами
-                    проекты</h3>
-                <p>Вам не нужно искать много разных компаний - мы сделаем полный комплекс работ. </p>
-                <p>
-                    Мы придумаем, как решить задачу, разработаем и произведем оборудование, напишем серверное
-                    программное обеспечение и заставим все правильно работать вместе.
-                </p>
-                <a class="buttonUnderOffers" href="#">О нашей компании<i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="col-md-8">
-                <div id="block-for-slider">
-                    <div id="viewport">
-                        <ul id="slidewrapper">
-                            <li class="slide">
-                                <img src="img/LeftPic.png" width="280" height="150p" alt="1" class="slide-img">
-                                <span>Проект 1</span>
-                                <p>Pilot Photonics produces innovative comb based products in a number of form-factors
-                                    from bare chips up to fully integrated opto-electronic modules.</p>
-                                <a href="#" class="buttonProject">Подробнее</a>
-                            </li>
-                            <li class="slide">
-                                <img src="img/rightPic.png" width="280" height="150p" alt="2" class="slide-img">
-                                <span>Проект 2</span>
-                                <p>Pilot Photonics produces innovative comb based products in a number of form-factors
-                                    from bare chips up to fully integrated opto-electronic modules.</p>
-                                <a href="#" class="buttonProject">Подробнее</a>
-                            </li>
+    <div class="container-fluid blockAboutUs" id="projects">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Реализованые нами
+                        проекты</h3>
+                    <p>Вам не нужно искать много разных компаний - мы сделаем полный комплекс работ. </p>
+                    <p>
+                        Мы придумаем, как решить задачу, разработаем и произведем оборудование, напишем серверное
+                        программное обеспечение и заставим все правильно работать вместе.
+                    </p>
+                    <a class="buttonUnderOffers anchor" href="#about">О нашей компании<i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="col-md-8">
+                    <div id="block-for-slider">
+                        <div id="viewport">
+                            <ul id="slidewrapper">
+                                <li class="slide">
+                                    <img src="img/LeftPic.png" width="280" height="150p" alt="1" class="slide-img">
+                                    <span>Проект 1</span>
+                                    <p>Pilot Photonics produces innovative comb based products in a number of form-factors
+                                        from bare chips up to fully integrated opto-electronic modules.</p>
+                                    <a href="#" class="buttonProject">Подробнее</a>
+                                </li>
+                                <li class="slide">
+                                    <img src="img/rightPic.png" width="280" height="150p" alt="2" class="slide-img">
+                                    <span>Проект 2</span>
+                                    <p>Pilot Photonics produces innovative comb based products in a number of form-factors
+                                        from bare chips up to fully integrated opto-electronic modules.</p>
+                                    <a href="#" class="buttonProject">Подробнее</a>
+                                </li>
 
-                            <li class="slide">
-                                <img src="img/LeftPic.png" alt="3" width="280" height="150p" class="slide-img">
-                                <span>Проект 3</span>
-                                <p>Pilot Photonics produces innovative comb based products in a number of form-factors
-                                    from bare chips up to fully integrated opto-electronic modules.</p>
-                                <a href="#" class="buttonProject">Подробнее</a>
-                            </li>
-                            <li class="slide">
-                                <img src="img/rightPic.png" alt="4" width="280" height="150p" class="slide-img">
-                                <span>Проект 4</span>
-                                <p>Pilot Photonics produces innovative comb based products in a number of form-factors
-                                    from bare chips up to fully integrated opto-electronic modules.</p>
-                                <a href="#" class="buttonProject">Подробнее</a>
-                            </li>
-                            <li class="slide">
-                                <img src="img/rightPic.png" alt="4" width="280" height="150p" class="slide-img">
-                                <span>Проект 5</span>
-                                <p>Pilot Photonics produces innovative comb based products in a number of form-factors
-                                    from bare chips up to fully integrated opto-electronic modules.</p>
-                                <a href="#" class="buttonProject">Подробнее</a>
-                            </li>
-                            <li class="slide">
-                                <img src="img/rightPic.png" alt="4" width="280" height="150p" class="slide-img">
-                                <span>Проект 6</span>
-                                <p>Pilot Photonics produces innovative comb based products in a number of form-factors
-                                    from bare chips up to fully integrated opto-electronic modules.</p>
-                                <a href="#" class="buttonProject">Подробнее</a>
-                            </li>
-                            <li class="slide">
-                                <img src="img/rightPic.png" alt="4" width="280" height="150p" class="slide-img">
-                                <span>Проект 7</span>
-                                <p>Pilot Photonics produces innovative comb based products in a number of form-factors
-                                    from bare chips up to fully integrated opto-electronic modules.</p>
-                                <a href="#" class="buttonProject">Подробнее</a>
-                            </li>
-                            <li class="slide">
-                                <img src="img/rightPic.png" alt="4" width="280" height="150p" class="slide-img">
-                                <span>Проект 8</span>
-                                <p>Pilot Photonics produces innovative comb based products in a number of form-factors
-                                    from bare chips up to fully integrated opto-electronic modules.</p>
-                                <a href="#" class="buttonProject">Подробнее</a>
-                            </li>
-                        </ul>
-                        <div id="prev-next-btns">
-                            <div id="prev-btn">
-                                <img src="img/left.png" alt="">
-                            </div>
-                            <div id="next-btn">
-                                <img src="img/right.png" alt="">
+                                <li class="slide">
+                                    <img src="img/LeftPic.png" alt="3" width="280" height="150p" class="slide-img">
+                                    <span>Проект 3</span>
+                                    <p>Pilot Photonics produces innovative comb based products in a number of form-factors
+                                        from bare chips up to fully integrated opto-electronic modules.</p>
+                                    <a href="#" class="buttonProject">Подробнее</a>
+                                </li>
+                                <li class="slide">
+                                    <img src="img/rightPic.png" alt="4" width="280" height="150p" class="slide-img">
+                                    <span>Проект 4</span>
+                                    <p>Pilot Photonics produces innovative comb based products in a number of form-factors
+                                        from bare chips up to fully integrated opto-electronic modules.</p>
+                                    <a href="#" class="buttonProject">Подробнее</a>
+                                </li>
+                                <li class="slide">
+                                    <img src="img/rightPic.png" alt="4" width="280" height="150p" class="slide-img">
+                                    <span>Проект 5</span>
+                                    <p>Pilot Photonics produces innovative comb based products in a number of form-factors
+                                        from bare chips up to fully integrated opto-electronic modules.</p>
+                                    <a href="#" class="buttonProject">Подробнее</a>
+                                </li>
+                                <li class="slide">
+                                    <img src="img/rightPic.png" alt="4" width="280" height="150p" class="slide-img">
+                                    <span>Проект 6</span>
+                                    <p>Pilot Photonics produces innovative comb based products in a number of form-factors
+                                        from bare chips up to fully integrated opto-electronic modules.</p>
+                                    <a href="#" class="buttonProject">Подробнее</a>
+                                </li>
+                                <li class="slide">
+                                    <img src="img/rightPic.png" alt="4" width="280" height="150p" class="slide-img">
+                                    <span>Проект 7</span>
+                                    <p>Pilot Photonics produces innovative comb based products in a number of form-factors
+                                        from bare chips up to fully integrated opto-electronic modules.</p>
+                                    <a href="#" class="buttonProject">Подробнее</a>
+                                </li>
+                                <li class="slide">
+                                    <img src="img/rightPic.png" alt="4" width="280" height="150p" class="slide-img">
+                                    <span>Проект 8</span>
+                                    <p>Pilot Photonics produces innovative comb based products in a number of form-factors
+                                        from bare chips up to fully integrated opto-electronic modules.</p>
+                                    <a href="#" class="buttonProject">Подробнее</a>
+                                </li>
+                            </ul>
+                            <div id="prev-next-btns">
+                                <div id="prev-btn">
+                                    <img src="img/left.png" alt="">
+                                </div>
+                                <div id="next-btn">
+                                    <img src="img/right.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
-    <div class="container">
+
+    <div class="container" id="about">
         <div class="row advantage">
             <div class="col-md-12 ">
                 <h3>Наши преимущества</h3>
@@ -242,13 +278,13 @@
         </div>
         <div class="row advantage">
             <div class="col-md-12">
-                <a class="buttonUnderOffers" href="#">О нашей компании<i class="fas fa-arrow-right"></i></a>
+                <a class="buttonUnderOffers anchor" href="#footerAbout">О нашей компании<i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
 </main>
 <footer>
-    <div class="container">
+    <div class="container" id="footerAbout">
         <div class="row">
             <div class="col-md-12">
                 <h3>О нашей компании</h3>
@@ -285,7 +321,7 @@
 
 
         </div>
-        <div class="row contact">
+        <div class="row contact" id="contats">
             <div class="col-md-12 heightForBlock">
                 <h3>SpaceKennel LTD.</h3>
                 <div class="col-md-12">
@@ -300,7 +336,7 @@
                     <span>E-mail: </span>
                     <span class="text">mail@spacekennel.ru</span>
                 </div>
-                <a class="footerButton" href="#">Отправить заявку</a>
+                <a class="footerButton" href="#"  data-toggle="modal" data-target="#myModal">Отправить заявку</a>
             </div>
 
         </div>
@@ -313,7 +349,7 @@
 <script>
     $("body").on("click", "a.anchor", function(){
         var idtop = $($(this).attr("href")).offset().top;
-        $('html,body').animate({scrollTop: idtop}, 8000);
+        $('html,body').animate({scrollTop: idtop}, 3000);
         return false;
     });
 </script>
