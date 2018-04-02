@@ -3,17 +3,16 @@ var slideCount = $('#slidewrapper').children().length;//8
 var translateWidth = 0;
 var equally = 0;
 var slide = 0;
-var slideunder = 0;
-if($('#viewport').width() >= 260 || $('#viewport').width() <= 320 ){
+
+if($('#viewport').width() >= 260 && $('#viewport').width() <= 320 ){
     slideNow = 1;
     equally = 1;
     slide = 1;
-    slideunder = 2;
+
 }else{
     slideNow = 2;
     equally = 2;
     slide = 5;
-    slideunder = 6;
 };
 
 

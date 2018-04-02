@@ -42,47 +42,53 @@
     width: 100%;
     height: 8%; } }
 @media all and (min-width: 320px) and (max-width: 800px) {
-  /* line 40, ../sass/media.sass */
+  /* line 39, ../sass/media.sass */
+  .modal-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+  /* line 42, ../sass/media.sass */
   header .blockWhatWEdo {
     text-align: center; }
-  /* line 42, ../sass/media.sass */
+  /* line 44, ../sass/media.sass */
   header .workingOutList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center; }
-    /* line 45, ../sass/media.sass */
+    /* line 47, ../sass/media.sass */
     header .workingOutList li:nth-child(-n+2) {
       margin-right: 0; }
-      /* line 47, ../sass/media.sass */
+      /* line 49, ../sass/media.sass */
       header .workingOutList li:nth-child(-n+2):after {
         background-color: transparent; }
-  /* line 49, ../sass/media.sass */
+  /* line 51, ../sass/media.sass */
   header .headerButton {
     margin-left: auto;
     margin-right: auto; }
 
-  /* line 53, ../sass/media.sass */
+  /* line 55, ../sass/media.sass */
   main .OurServices {
     text-align: center; }
-  /* line 55, ../sass/media.sass */
+  /* line 57, ../sass/media.sass */
   main .blockOffers {
     margin-bottom: 10px; } }
 @media all and (max-width: 990px) {
-  /* line 59, ../sass/media.sass */
+  /* line 61, ../sass/media.sass */
   header .navbar {
     width: 100%;
     text-align: center; }
-    /* line 62, ../sass/media.sass */
+    /* line 64, ../sass/media.sass */
     header .navbar button {
       border-color: white;
       outline: transparent; }
-      /* line 65, ../sass/media.sass */
+      /* line 67, ../sass/media.sass */
       header .navbar button svg {
         color: white; }
 
-  /* line 68, ../sass/media.sass */
+  /* line 70, ../sass/media.sass */
   main .blockOffers {
     line-height: inherit;
     -webkit-box-pack: space-evenly;
@@ -90,5 +96,12 @@
             justify-content: space-evenly;
     margin: 20px auto 20px auto;
     width: 90%; } }
+@media all and (max-width: 780px) {
+  /* line 77, ../sass/media.sass */
+  header .navbar {
+    text-align: left; }
+    /* line 79, ../sass/media.sass */
+    header .navbar a {
+      text-align: center; } }
 
 /*# sourceMappingURL=media.css.map */
