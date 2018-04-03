@@ -69,50 +69,43 @@ header {
   background-size: cover;
   color: white; }
   /* line 45, ../sass/style.sass */
-  header #logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    /* line 50, ../sass/style.sass */
-    header #logo img {
-      width: 50%; }
-  /* line 52, ../sass/style.sass */
   header h1 {
     font-size: 45px;
     font-family: "Roboto Medium", Arial; }
-  /* line 55, ../sass/style.sass */
+  /* line 48, ../sass/style.sass */
   header .navbar {
     float: right;
     margin-bottom: 10%;
-    margin-top: 10px; }
-    /* line 60, ../sass/style.sass */
-    header .navbar .navbar-nav .nav-item {
-      font-family: "Roboto Medium", Arial;
-      font-size: 21px;
-      color: white; }
-      /* line 64, ../sass/style.sass */
-      header .navbar .navbar-nav .nav-item a {
+    margin-top: 10px;
+    width: 100%; }
+    /* line 53, ../sass/style.sass */
+    header .navbar .navbar-nav {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      /* line 57, ../sass/style.sass */
+      header .navbar .navbar-nav .nav-item {
+        font-family: "Roboto Medium", Arial;
+        font-size: 21px;
         color: white; }
-  /* line 66, ../sass/style.sass */
+        /* line 61, ../sass/style.sass */
+        header .navbar .navbar-nav .nav-item a {
+          color: white; }
+  /* line 63, ../sass/style.sass */
   header .workingOutList {
     font-family: "Roboto Medium", Arial;
     font-size: 29px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    /* line 70, ../sass/style.sass */
+    /* line 67, ../sass/style.sass */
     header .workingOutList li:nth-child(-n+2) {
       margin-right: 25px;
       position: relative; }
-      /* line 73, ../sass/style.sass */
+      /* line 70, ../sass/style.sass */
       header .workingOutList li:nth-child(-n+2):after {
         content: "";
         background-color: white;
@@ -122,12 +115,12 @@ header {
         margin-left: 10px;
         position: absolute;
         bottom: 8px; }
-  /* line 82, ../sass/style.sass */
+  /* line 79, ../sass/style.sass */
   header p {
     font-size: 20px;
     font-family: "Roboto Medium", Arial;
     margin-top: 80px; }
-  /* line 86, ../sass/style.sass */
+  /* line 83, ../sass/style.sass */
   header .headerButton {
     width: 250px;
     background-color: white;
@@ -146,31 +139,31 @@ header {
     margin-bottom: 130px;
     margin-top: 55px; }
 
-/* line 100, ../sass/style.sass */
+/* line 97, ../sass/style.sass */
 main .OurServices .buttonOffers {
   width: 140px; }
-/* line 102, ../sass/style.sass */
+/* line 99, ../sass/style.sass */
 main .Pclass {
   margin-bottom: 17%; }
-/* line 104, ../sass/style.sass */
+/* line 101, ../sass/style.sass */
 main .heading {
   text-align: center;
   margin-top: 85px;
   margin-bottom: 40px;
   line-height: 1.7; }
-  /* line 109, ../sass/style.sass */
+  /* line 106, ../sass/style.sass */
   main .heading h2 {
     font-family: "Roboto Medium", Arial;
     font-size: 29px;
     font-weight: bold;
     margin-bottom: 30px; }
-  /* line 114, ../sass/style.sass */
+  /* line 111, ../sass/style.sass */
   main .heading p {
     font-size: 21px;
     font-family: "Roboto Medium", Arial; }
-/* line 117, ../sass/style.sass */
+/* line 114, ../sass/style.sass */
 main .blockOffers {
-  height: 320px;
+  height: 354px;
   background-color: #E6E5E5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +180,7 @@ main .blockOffers {
           justify-content: space-between;
   line-height: 2;
   padding: 10px; }
-  /* line 126, ../sass/style.sass */
+  /* line 123, ../sass/style.sass */
   main .blockOffers .buttonOffers {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -204,16 +197,16 @@ main .blockOffers {
     width: 167px;
     background-color: white;
     border: 4px solid #4376BB; }
-  /* line 136, ../sass/style.sass */
+  /* line 133, ../sass/style.sass */
   main .blockOffers h3 {
     color: #436DB5;
     font-size: 25px;
     font-family: "Roboto Medium", Arial; }
-  /* line 141, ../sass/style.sass */
+  /* line 138, ../sass/style.sass */
   main .blockOffers p {
     font-size: 17px;
     font-family: "Roboto Regular", Arial; }
-/* line 144, ../sass/style.sass */
+/* line 141, ../sass/style.sass */
 main .buttonUnderOffers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,11 +227,11 @@ main .buttonUnderOffers {
   height: -moz-fit-content;
   height: fit-content;
   margin: 60px auto 35px auto; }
-  /* line 154, ../sass/style.sass */
+  /* line 151, ../sass/style.sass */
   main .buttonUnderOffers svg {
     font-size: 14px;
     margin-left: 10px; }
-/* line 157, ../sass/style.sass */
+/* line 154, ../sass/style.sass */
 main .blockAboutUs {
   background-color: #E6E5E5;
   display: -webkit-box;
@@ -250,33 +243,33 @@ main .blockAboutUs {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  /* line 162, ../sass/style.sass */
+  /* line 159, ../sass/style.sass */
   main .blockAboutUs h3 {
     margin-top: 45px;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 55px; }
-  /* line 167, ../sass/style.sass */
+  /* line 164, ../sass/style.sass */
   main .blockAboutUs p {
     font-size: 21px;
     font-family: "Roboto Regular", Arial;
     color: #5D5D5D; }
-  /* line 171, ../sass/style.sass */
+  /* line 168, ../sass/style.sass */
   main .blockAboutUs .buttonUnderOffers {
     margin-bottom: 80px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin-left: 0; }
-    /* line 175, ../sass/style.sass */
+    /* line 172, ../sass/style.sass */
     main .blockAboutUs .buttonUnderOffers svg {
       margin-left: 5px; }
-/* line 177, ../sass/style.sass */
+/* line 174, ../sass/style.sass */
 main #block-for-slider {
   width: 800px;
   margin: 0 auto;
   margin-top: 56px; }
-  /* line 181, ../sass/style.sass */
+  /* line 178, ../sass/style.sass */
   main #block-for-slider #viewport {
     width: 100%;
     display: -webkit-box;
@@ -292,7 +285,7 @@ main #block-for-slider {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none; }
-  /* line 192, ../sass/style.sass */
+  /* line 189, ../sass/style.sass */
   main #block-for-slider #slidewrapper {
     position: relative;
     width: calc(100% * 8);
@@ -304,12 +297,12 @@ main #block-for-slider {
     transition: 1s;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out; }
-  /* line 205, ../sass/style.sass */
+  /* line 202, ../sass/style.sass */
   main #block-for-slider #slidewrapper ul,
   main #block-for-slider #slidewrapper li {
     margin: 0;
     padding: 0; }
-  /* line 209, ../sass/style.sass */
+  /* line 206, ../sass/style.sass */
   main #block-for-slider #slidewrapper li {
     width: calc(100% / 8 - 420px);
     list-style: none;
@@ -331,41 +324,41 @@ main #block-for-slider {
             justify-content: center;
     padding: 0px 10px 0 10px;
     line-height: 2; }
-    /* line 223, ../sass/style.sass */
+    /* line 220, ../sass/style.sass */
     main #block-for-slider #slidewrapper li span {
       font-size: 25px;
       font-family: "Roboto Medium", Arial;
       font-weight: bold; }
-    /* line 227, ../sass/style.sass */
+    /* line 224, ../sass/style.sass */
     main #block-for-slider #slidewrapper li p {
       font-size: 17px;
       font-family: "Roboto Regular", Arial; }
-  /* line 230, ../sass/style.sass */
+  /* line 227, ../sass/style.sass */
   main #block-for-slider .slide-img {
     display: block;
     margin: 30px auto 30px auto; }
-  /* line 233, ../sass/style.sass */
+  /* line 230, ../sass/style.sass */
   main #block-for-slider #prev-btn, main #block-for-slider #next-btn {
     position: absolute;
     width: 50px;
     height: 50px; }
-  /* line 238, ../sass/style.sass */
+  /* line 235, ../sass/style.sass */
   main #block-for-slider #prev-btn {
     left: 20%;
     cursor: pointer;
     bottom: 0%; }
-    /* line 242, ../sass/style.sass */
+    /* line 239, ../sass/style.sass */
     main #block-for-slider #prev-btn img {
       width: 95%; }
-  /* line 244, ../sass/style.sass */
+  /* line 241, ../sass/style.sass */
   main #block-for-slider #next-btn {
     right: 20%;
     cursor: pointer;
     bottom: 0%; }
-    /* line 248, ../sass/style.sass */
+    /* line 245, ../sass/style.sass */
     main #block-for-slider #next-btn img {
       width: 95%; }
-/* line 251, ../sass/style.sass */
+/* line 248, ../sass/style.sass */
 main .buttonProject {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,6 +375,9 @@ main .buttonProject {
   height: fit-content;
   border: 4px solid #4376BB;
   background-color: white; }
+/* line 258, ../sass/style.sass */
+main #about h3 {
+  margin-top: 70px; }
 /* line 261, ../sass/style.sass */
 main .advantage .buttonUnderOffers {
   margin-bottom: 20px;
@@ -391,7 +387,7 @@ main .advantage .buttonUnderOffers {
   /* line 264, ../sass/style.sass */
   main .advantage .buttonUnderOffers svg {
     margin-left: 5px; }
-/* line 267, ../sass/style.sass */
+/* line 266, ../sass/style.sass */
 main .advantage h3 {
   font-family: "Roboto Medium", Arial;
   font-size: 29px;
