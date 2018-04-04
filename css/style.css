@@ -411,30 +411,29 @@ main .advantage div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-line-pack: start;
       align-content: start;
   text-align: center; }
-  /* line 284, ../sass/style.sass */
+  /* line 283, ../sass/style.sass */
+  main .advantage div img {
+    margin-bottom: 10%; }
+  /* line 285, ../sass/style.sass */
   main .advantage div span {
     font-family: "Roboto Bold", Arial;
     font-size: 21px;
-    margin-bottom: 55px;
-    margin-top: 30px; }
-  /* line 289, ../sass/style.sass */
+    margin-bottom: 55px; }
+  /* line 290, ../sass/style.sass */
   main .advantage div p {
     font-family: "Roboto Regular", Arial;
     font-size: 17px; }
 
-/* line 292, ../sass/style.sass */
+/* line 293, ../sass/style.sass */
 footer {
   background-color: #4376BB; }
-  /* line 295, ../sass/style.sass */
+  /* line 296, ../sass/style.sass */
   footer .myTool {
     position: relative; }
-  /* line 297, ../sass/style.sass */
+  /* line 298, ../sass/style.sass */
   footer .contact {
     position: absolute;
     top: 0;
@@ -442,10 +441,10 @@ footer {
     width: 50%;
     background-color: rgba(248, 250, 245, 0.8);
     left: 31.3px; }
-    /* line 304, ../sass/style.sass */
+    /* line 305, ../sass/style.sass */
     footer .contact .heightForBlock {
       height: 100%; }
-    /* line 306, ../sass/style.sass */
+    /* line 307, ../sass/style.sass */
     footer .contact .footerButton {
       width: 250px;
       background-color: white;
@@ -462,33 +461,33 @@ footer {
               justify-content: center;
       border: 2px solid #4376BB;
       margin-bottom: 130px; }
-    /* line 316, ../sass/style.sass */
+    /* line 317, ../sass/style.sass */
     footer .contact h3 {
       font-family: "Roboto Bold", Arial;
       font-size: 25px;
       color: black;
       margin-bottom: 40px;
       text-align: left; }
-    /* line 322, ../sass/style.sass */
+    /* line 323, ../sass/style.sass */
     footer .contact span {
       display: block;
       font-family: "Roboto Bold";
       font-size: 21px; }
-    /* line 326, ../sass/style.sass */
+    /* line 327, ../sass/style.sass */
     footer .contact .text {
       font-family: "Roboto Regular", Arial;
       margin-bottom: 35px; }
-  /* line 329, ../sass/style.sass */
+  /* line 330, ../sass/style.sass */
   footer .contentFooter {
     margin-bottom: 16px; }
-  /* line 331, ../sass/style.sass */
+  /* line 332, ../sass/style.sass */
   footer iframe {
     width: 100%; }
-  /* line 333, ../sass/style.sass */
+  /* line 334, ../sass/style.sass */
   footer img {
     width: 100%;
     height: 100%; }
-  /* line 336, ../sass/style.sass */
+  /* line 337, ../sass/style.sass */
   footer h3 {
     margin-top: 35px;
     margin-bottom: 60px;
@@ -496,7 +495,7 @@ footer {
     font-size: 30px;
     color: white;
     text-align: center; }
-  /* line 343, ../sass/style.sass */
+  /* line 344, ../sass/style.sass */
   footer p {
     font-family: "Roboto Bold", Arial;
     font-size: 18px;
